@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterdemo/demo/HomeContent.dart';
+import 'package:flutterdemo/demo/ListContent.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("flutter demo11222R1"),
         ),
-        body: HomeContent(),
+        body: ListContent(),
       ),
       theme: ThemeData(primarySwatch: Colors.yellow),
     );

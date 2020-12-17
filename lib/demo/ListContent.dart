@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HomeContent extends StatelessWidget {
+class ListContent extends StatelessWidget {
   // 自定义方法
   List<Widget> _getData() {
     List<Widget> list = List();
