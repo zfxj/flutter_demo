@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 import '../Tabs.dart';
-import '../pages/Index/HomePage.dart';
-import '../pages/catogary/CatogaryPage.dart';
-import '../pages/setting/SettingPage.dart';
 import '../demo/Search.dart';
-import '../pages/LoginPage.dart';
+import '../user/LoginPage.dart';
 
 // 配置路由
 final routes = {
-  '/': (context) => Tabs(),
-  '/home': (context) => HomePage(),
-  '/categroy': (context) => CatogaryPage(),
-  '/setting': (context) => SettingPage(),
+  '/': (context) => Tabs(index: 1),
+  '/login': (context) => LoginPage(),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
 };
 

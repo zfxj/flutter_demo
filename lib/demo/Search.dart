@@ -10,8 +10,24 @@ class SearchPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("${this.title}"),
       ),
-      body: Text(
-          '搜索页面id=${this.arguments != null ? this.arguments['id'] : '没有传参数'}'),
+      body: Column(children: [
+        Text(
+            '搜索页面id=${this.arguments != null ? this.arguments['id'] : '没有传参数'}'),
+        RaisedButton(
+            child: Text("跳转登录"),
+            color: Colors.blue,
+            textColor: Colors.white,
+            onPressed: () {
+              Navigator.pushNamed(context, '/login');
+            }),
+        RaisedButton(
+            child: Text("返回上一页"),
+            color: Colors.blue,
+            textColor: Colors.white,
+            onPressed: () {
+              Navigator.of(context).pop();
+            })
+      ]),
     );
   }
 }

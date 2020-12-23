@@ -52,7 +52,7 @@ class _HomePageStateFulState extends State<HomePageStateFul> {
             textColor: Colors.white,
             onPressed: () {
               Navigator.pushNamed(context, '/search', arguments: {"id": 123});
-            })
+            }),
       ],
     );
   }

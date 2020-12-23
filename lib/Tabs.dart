@@ -4,20 +4,23 @@ import 'pages/catogary/CatogaryPage.dart';
 import 'pages/setting/SettingPage.dart';
 
 class Tabs extends StatefulWidget {
-  Tabs({Key key}) : super(key: key);
-
+  final index;
+  Tabs({Key key, this.index = 0}) : super(key: key);
   @override
-  _TabsState createState() => _TabsState();
+  _TabsState createState() => _TabsState(this.index);
 }
 
 class _TabsState extends State<Tabs> {
-  int currentIndex = 0;
+  int currentIndex;
+  _TabsState(index) {
+    this.currentIndex = index;
+  }
   List _pageList = [HomePage(), CatogaryPage(), SettingPage()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("flutter1234"),
+        title: Text("flutter123"),
       ),
       body: this._pageList[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
