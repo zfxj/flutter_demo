@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import '../Tabs.dart';
 import '../demo/Search.dart';
 import '../user/LoginPage.dart';
+import '../user/FormDemo.dart';
 
 // 配置路由
 final routes = {
   '/': (context) => Tabs(index: 1),
   '/login': (context) => LoginPage(),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
+  '/formDemo': (context) => FormDemo(),
 };
 
 // 针对路由传参数封装的方法
