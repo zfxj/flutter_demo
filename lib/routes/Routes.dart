@@ -6,7 +6,7 @@ import '../user/FormDemo.dart';
 
 // 配置路由
 final routes = {
-  '/': (context) => Tabs(index: 1),
+  '/': (context) => Tabs(index: 2),
   '/login': (context) => LoginPage(),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
   '/formDemo': (context) => FormDemo(),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../demo/DatePicker.dart';
 
 class CatogaryPage extends StatefulWidget {
   CatogaryPage({Key key}) : super(key: key);
@@ -11,7 +12,7 @@ class _CatogaryPageState extends State<CatogaryPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('分类'),
+      child: DatePicker(),
     );
   }
 }
