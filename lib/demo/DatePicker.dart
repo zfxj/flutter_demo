@@ -20,7 +20,22 @@ class _DatePickerState extends State<DatePicker> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text("时间"),
+      child: Column(
+        children: [
+          Text("时间"),
+          SizedBox(
+            height: 20,
+          ),
+          RaisedButton(
+              child: Text("DioDemo"),
+              color: Colors.blue,
+              textColor: Colors.white,
+              // 基本路由跳转
+              onPressed: () {
+                Navigator.pushNamed(context, '/dioTest');
+              }),
+        ],
+      ),
     );
   }
 }

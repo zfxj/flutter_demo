@@ -3,6 +3,7 @@ import '../Tabs.dart';
 import '../demo/Search.dart';
 import '../user/LoginPage.dart';
 import '../user/FormDemo.dart';
+import '../demo/DioDemo.dart';
 
 // 配置路由
 final routes = {
@@ -10,6 +11,7 @@ final routes = {
   '/login': (context) => LoginPage(),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
   '/formDemo': (context) => FormDemo(),
+  '/dioTest': (context) => DioDemo()
 };
 
 // 针对路由传参数封装的方法
